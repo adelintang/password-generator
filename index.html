@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Password Generator</title>
+</head>
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500">
+
+    <div class="m-auto mt-20 w-[50%] max-w-xs min-w-max bg-blue-300 flex flex-col justify-center items-center gap-4 py-4 rounded">
+        <h1 class="text-white font-bold text-xl mb-10">Password Generator</h1>
+        <input id="range" type="number" min="6" placeholder="masukan rentang Password" required class="w-[80%] py-2 rounded  pl-2">
+        <div class="flex w-[80%] gap-1">
+            <input id="output" type="text" placeholder="hasil generate password" disabled class="w-[90%] py-2 rounded text-white pl-2">
+            <img src="img/copy.png" alt="copy-logo" id="copyBtn" class="w-[40px] rounded cursor-pointer hover:bg-slate-300 active:bg-slate-500">
+        </div>
+        <button id="button" type="submit" class="w-[80%] py-2 bg-blue-400 rounded text-white font-semibold">Generate</button>
+    </div> 
+
+<script src="./dist/bundle.js"></script>    
+</body>
+</html>
