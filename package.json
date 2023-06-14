@@ -4,12 +4,14 @@
   "description": "",
   "main": "tailwind.config.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "build-css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "tailwind": "^4.0.0",
     "webpack": "^5.84.1",
     "webpack-cli": "^5.1.1"
   }
